@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--VEIDOTS NO AVG.LV KOPIJAS, VISAS AUTORTIESIBAS PIENAKAS RAVG-->
+<!-- saved from url=(0023)https://avg.lv/lv/home/ -->
+<!--Pārveidoja Vilis Civkašs, IT koordinators 24/25. m.g.-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>RĀVģ SP | Valde</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=deVICE-width, initial-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" href="./general/open-sans.css">
+	<link rel="stylesheet" href="./general/roboto-condensed.css">
+	<link rel="stylesheet" href="./general/style.css">
+
+	<script src="./general/jquery.min.js.download"></script>
+	<script src="./general/script.js.download"></script>
+
+<style>
+/* Notikumi section styles */
+#notikumi {
+  display: flex;
+  gap: 20px; /* Space between columns */
+  flex-wrap: wrap;
+}
+
+#notikumi > .notikumi-column {
+  flex: 1 1 45%;
+}
+
+/* Default: For narrow screens, event cards get horizontal margins on both sides */
+.notikumi-card {
+  background: #fff;
+  padding: 15px;
+  margin: 0 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the event cards */
+.notikumi-card:hover {
+  background-color: #d1c9bf;
+  color: black;
+}
+
+/* 16:9 image styling */
+.notikumi-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Style for the event date and description */
+.notikumi-date {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.notikumi-desc {
+  margin: 0;
+}
+
+/* Responsive behavior: On narrow screens stack columns into one */
+@media (max-width: 768px) {
+  #notikumi {
+    flex-direction: column;
+  }
+  #notikumi > .notikumi-column {
+    flex: 1 1 100%;
+  }
+}
+
+/* Wide screen overrides: Remove inner horizontal margins */
+/* Left column: Only add left indent */
+@media (min-width: 769px) {
+  #notikumi .notikumi-column:first-child .notikumi-card {
+    margin: 0 0 20px 10px;  /* Only left margin */
+  }
+  /* Right column: Only add right indent */
+  #notikumi .notikumi-column:last-child .notikumi-card {
+    margin: 0 10px 20px 0;  /* Only right margin */
+  }
+}
+
+
+</style>
+	
+</head><body>
+
+<div id="frame">
+	<header>
+		<a href="" id="mobSwitch"></a>
+		<h1><a href="https://avg.lv/" id="logo">Rīgas Āgenskalna <br>Valsts ģimnāzija</a></h1>
+		<ul><!--
+		--><li class="sub"><a href="index.html">Tuvākie notikumi</a></li>
+		<li class="sub"><a href="struktura.html">Struktūra</a></li>
+		<li class="sub"><a href="aktualitates.html">Aktualitātes</a></li>
+		<li class="sub"><a href="brivais-mikrofons.html">Brīvais mikrofons</a></li>
+		<li class="sub"><a href="dokumenti.html">Dokumenti</a></li>
+		<li class="sub"><a href="galerija.html">Galerija</a></li>
+		</ul>
+	</header>
+
+	<main>
+        
+<!-- content -->
+<section class="misc">
+
+<div id="notikumi">
+  <!-- Left column: Gaidāmie notikumi -->
+  <div class="notikumi-column">
+    <h2>Gaidāmie notikumi</h2>
+    
+    <!-- Example event card 1 -->
+    <div class="notikumi-card">
+      <h4>Pamatskolas balle</h4>
+      <p class="notikumi-date">27.03.2025</p>
+      <p class="notikumi-desc">SP parūpēsies arī par 7.-9. klašu audzēkņu jautrību pamatskolas ballē.</p>
+    </div>
+    
+    <!-- Example event card 2 -->
+    <div class="notikumi-card">
+      <h4>RĀVĢ un RAĢ popiela "Apkārt Eiropai"</h4>
+      <p class="notikumi-date">10.04.2025</p>
+      <p class="notikumi-desc">Mūsu skola apvienojusies ar Rīgas Angļu ģimnāziju, lai izveidotu kopīgu popielu ar tematiku "apkāŗt Eiropai".</p>
+    </div>
+	
+	<div class="notikumi-card">
+      <h4>Hāgena balva</h4>
+      <p class="notikumi-date">06.05.2025</p>
+      <p class="notikumi-desc">Ikgadējā Hāgena balvas cerimonijā tiks noskaidroti skolēnu prātos visspilgtāk iespiedušies klasesbiedri un skolotāji...</p>
+    </div>
+	
+  </div>
+  
+  <!-- Right column: Jau notikušais -->
+  <div class="notikumi-column">
+    <h2>Jau notikušais</h2>
+    
+	<div class="notikumi-card">
+      <img src="./notikumi/tplp.jpg" alt="Event image">
+      <h4>Vidusskolas balle "Tiekamies pie Laimas pulksteņa"</h4>
+      <p class="notikumi-date">21.02.2025</p>
+      <p class="notikumi-desc">Otrā semestra ballē skolēnus priecēja grupa "Carnival youth". Tika noskaidroti balles karalis un karaliene, valentīni, 
+	  kā arī ping-pong turnīra uzvarētāji, kuri tika apbalvoti, pateicoties mūsu sponsoriem.</p>
+    </div>
+	
+    <!-- Example event card 1 -->
+    <div class="notikumi-card">
+      <img src="./notikumi/paruzvaru.jpg" alt="Event image">
+      <h4>Baltijas skolas par uzvaru</h4>
+      <p class="notikumi-date">13.01.2025 - 28.02.2025</p>
+      <p class="notikumi-desc">Šogad skolēni un skolas no visas Latvijas, Igaunijas un Lietuvas apvienoja spēkus, lai atbalstītu Ukrainu kampaņā "Baltijas skolas uzvarai". 
+	  No 13. janvāra līdz 28. februārim tika savākti būtiski ziedojumi, lai palīdzētu tiem, kas cīnās par brīvību un mieru Ukrainā. Kampaņa apliecināja, ka jaunieši 
+	  spēj mainīt pasauli — pērn vairāk nekā 100 skolas Latvijā kopā savāca vairāk nekā 10 tonnas palīdzības Ukrainas karavīriem, un šogad iniciatīva pirmo reizi aptvēra visas trīs Baltijas valstis.</p>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+</section>
+
+
+<section class="misc">
+<br>
+<div class="_text">
+<table id="kontakti">
+<tr>
+<td onclick="window.location.href='https://www.instagram.com/agenskalna.valsts/';">
+	<br>
+	<img src="./kontakti/ig-logo.png" width="10%">
+	<p>@agenskalna.valsts</p>
+</td>
+<td onclick="window.location.href='mailto:avgdome@gmail.com';">
+	<br>
+	<img src="./kontakti/gm-logo.png" width="12%">
+	<p>avgdome@gmail.com</p>
+</td>
+<td onclick="window.location.href='https://www.tiktok.com/@avgdome/';">
+	<br>
+	<img src="./kontakti/tt-logo.png" width="12%">
+	<p>@avgdome</p>
+</td>
+<td onclick="window.location.href='https://www.x.com/agenskalniesi/';">
+	<br>
+	<img src="./kontakti/x-logo.png" width="10%">
+	<p>@agenskalniesi</p>
+</td>
+</tr>
+</table>
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobSwitch = document.getElementById('mobSwitch');
+    const menu = document.querySelector('header ul');
+    const subMenuParents = document.querySelectorAll('header ul li.sub > a'); // Parent items with submenus
+
+    // Toggle the main mobile menu
+    mobSwitch.addEventListener('click', function() {
+        menu.classList.toggle('open');
+    });
+
+    // Handle submenu toggle for items with submenus
+    subMenuParents.forEach(function(subMenuLink) {
+        subMenuLink.addEventListener('click', function(event) {
+            const parentLi = this.parentElement;
+
+            // Check if the parent li has a submenu
+            if (parentLi.querySelector('ul')) {
+                event.preventDefault(); // Prevent navigation for the parent link
+                
+                // Close other open submenus
+                subMenuParents.forEach(function(otherLink) {
+                    const otherParentLi = otherLink.parentElement;
+                    if (otherParentLi !== parentLi) {
+                        otherParentLi.classList.remove('open');
+                    }
+                });
+
+                // Toggle the clicked submenu
+                parentLi.classList.toggle('open');
+            }
+        });
+    });
+});
+</script>
+
+</content>
+	</main>
+
+	<footer>
+		<a href="http://wedidthis.lv/" target="_blank" class="wdt" title="IT risinājumu izstrāde"></a>
+		<p>© Rīgas Āgenskalna Valsts ģimnāzija, 2024</p>
+	</footer>
+
+</body></html>

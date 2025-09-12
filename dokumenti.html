@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--VEIDOTS NO AVG.LV KOPIJAS, VISAS AUTORTIESIBAS PIENAKAS RAVG-->
+<!-- saved from url=(0023)https://avg.lv/lv/home/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>RĀVģ SP | Dokumenti</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" href="./general/open-sans.css">
+	<link rel="stylesheet" href="./general/roboto-condensed.css">
+	<link rel="stylesheet" href="./general/style.css">
+
+	<script src="./general/jquery.min.js.download"></script>
+	<script src="./general/script.js.download"></script>
+	
+	<style>
+        #doc {
+            display: flex; /* Use Flexbox for side-by-side layout */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #document-list {
+            width: 20%; /* Set width for the document list */
+            padding-right: 20px; /* Space between the two sections */
+        }
+        #pdf-viewer {
+            width: 80%; /* Set width for the PDF viewer */
+        }
+        h3 {
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        h3:hover {
+            text-decoration: none;
+			background-color:#d1c9bf;
+			color:black;
+			transition: all 100ms;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+	
+	@media (max-width: 1000px) {
+            #doc {
+                flex-direction: column; /* Stack items vertically */
+                align-items: stretch; /* Make sure items take full width */
+            }
+
+            #document-list {
+                width: 100%; /* Full width on narrow screens */
+                margin-bottom: 10px; /* Spacing between list and content */
+            }
+
+            #pdf-content-area {
+                width: 100%; /* Full width for content */
+                margin-left: 0;
+				margin-right: 0px;
+				
+            }
+        }
+}
+    </style>
+	
+</head><body>
+
+<div id="frame">
+	<header>
+		<a href="" id="mobSwitch"></a>
+		<h1><a href="https://avg.lv/" id="logo">Rīgas Āgenskalna <br>Valsts ģimnāzija</a></h1>
+		<ul><!--
+		--><li class="sub"><a href="index.html">Tuvākie notikumi</a></li>
+		<li class="sub"><a href="struktura.html">Struktūra</a></li>
+		<li class="sub"><a href="aktualitates.html">Aktualitātes</a></li>
+		<li class="sub"><a href="brivais-mikrofons.html">Brīvais mikrofons</a></li>
+		<li class="sub"><a href="dokumenti.html">Dokumenti</a></li>
+		<li class="sub"><a href="galerija.html">Galerija</a></li>
+		</ul>
+	</header>
+
+	<main>
+        
+<!-- content -->
+<section class="misc">
+
+<h2>Dokumentu arhīvs</h2>
+
+<div id="doc">
+    <div id="document-list">
+		<h3 onclick="openPDF('./dokumenti/iesniegums_21feb.pdf')">+1 iesniegums 21. februāra ballei</h3>
+		<h3 onclick="openPDF('./dokumenti/sp-kulturas-mantojums.pdf')">SP kultūras mantojums (gada plāns)</h3>
+        <h3 onclick="openPDF('./dokumenti/sp_reglaments_24_25.pdf')">2024./2025. m.g. reglaments</h3>
+        <h3 onclick="openPDF('./dokumenti/sp_reglaments_23_24.pdf')">2023./2024. m.g. reglaments</h3>
+        <h3 onclick="openPDF('./dokumenti/sp_reglaments_2022.pdf')">2022./2023. m.g. reglaments</h3>
+		<h3 onclick="openPDF('./dokumenti/sp_reglaments_2021.pdf')">2021./2022. m.g. reglaments</h3>
+		<h3 onclick="openPDF('./dokumenti/sp_reglaments_2015.pdf')">2015./2016. m.g. reglaments</h3>
+    </div>
+    <div id="pdf-viewer">
+        <iframe id="pdf-frame" src="" style="display: none;"></iframe>
+        <p id="no-doc"><i>viņi aizgāja prom nepagriezdamies<br>atstāja tikai izsenis caurstaigātās peļķes<br>bet viņa tāpat gribēja atstarot zvaigznes</i><br>
+		<br>(Izvēlēto dokumentu nevar ielādēt)</p>
+    </div>
+</div>
+
+<script>
+    function openPDF(pdfUrl) {
+        document.getElementById('pdf-frame').src = pdfUrl;
+        document.getElementById('pdf-frame').style.display = 'block';
+        document.getElementById('no-doc').style.display = 'none';
+    }
+
+    // Open the first document on page load
+    window.onload = function() {
+        openPDF('./dokumenti/iesniegums_21feb.pdf');
+    };
+</script>
+
+
+
+</section>
+
+<section class="misc">
+<br>
+<div class="_text">
+<table id="kontakti">
+<tr>
+<td onclick="window.location.href='https://www.instagram.com/agenskalna.valsts/';">
+	<br>
+	<img src="./kontakti/ig-logo.png" width="10%">
+	<p>@agenskalna.valsts</p>
+</td>
+<td onclick="window.location.href='mailto:avgdome@gmail.com';">
+	<br>
+	<img src="./kontakti/gm-logo.png" width="12%">
+	<p>avgdome@gmail.com</p>
+</td>
+<td onclick="window.location.href='https://www.tiktok.com/@avgdome/';">
+	<br>
+	<img src="./kontakti/tt-logo.png" width="12%">
+	<p>@avgdome</p>
+</td>
+<td onclick="window.location.href='https://www.x.com/agenskalniesi/';">
+	<br>
+	<img src="./kontakti/x-logo.png" width="10%">
+	<p>@agenskalniesi</p>
+</td>
+</tr>
+</table>
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobSwitch = document.getElementById('mobSwitch');
+    const menu = document.querySelector('header ul');
+    const subMenuParents = document.querySelectorAll('header ul li.sub > a'); // Parent items with submenus
+
+    // Toggle the main mobile menu
+    mobSwitch.addEventListener('click', function() {
+        menu.classList.toggle('open');
+    });
+
+    // Handle submenu toggle for items with submenus
+    subMenuParents.forEach(function(subMenuLink) {
+        subMenuLink.addEventListener('click', function(event) {
+            const parentLi = this.parentElement;
+
+            // Check if the parent li has a submenu
+            if (parentLi.querySelector('ul')) {
+                event.preventDefault(); // Prevent navigation for the parent link
+                
+                // Close other open submenus
+                subMenuParents.forEach(function(otherLink) {
+                    const otherParentLi = otherLink.parentElement;
+                    if (otherParentLi !== parentLi) {
+                        otherParentLi.classList.remove('open');
+                    }
+                });
+
+                // Toggle the clicked submenu
+                parentLi.classList.toggle('open');
+            }
+        });
+    });
+});
+</script>
+
+</content>
+	</main>
+
+	<footer>
+		<a href="http://wedidthis.lv/" target="_blank" class="wdt" title="IT risinājumu izstrāde"></a>
+		<p>© Rīgas Āgenskalna Valsts ģimnāzija, 2024</p>
+	</footer>
+
+</body></html>

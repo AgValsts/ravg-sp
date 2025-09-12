@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--VEIDOTS NO AVG.LV KOPIJAS, VISAS AUTORTIESIBAS PIENAKAS RAVG-->
+<!-- saved from url=(0023)https://avg.lv/lv/home/ -->
+<!--Pārveidoja Vilis Civkašs, IT koordinators 24/25. m.g.-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>RĀVģ SP | valde</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" href="./general/open-sans.css">
+	<link rel="stylesheet" href="./general/roboto-condensed.css">
+	<link rel="stylesheet" href="./general/style.css">
+	<link rel="stylesheet" href="./galerija/galerija-style.css">
+
+	<script src="./general/jquery.min.js.download"></script>
+	<script src="./general/script.js.download"></script>
+</head><body>
+
+<div id="frame">
+	<header>
+		<a href="" id="mobSwitch"></a>
+		<h1><a href="https://avg.lv/" id="logo">Rīgas Āgenskalna <br>Valsts ģimnāzija</a></h1>
+		<ul><!--
+		--><li class="sub"><a href="index.html">Tuvākie notikumi</a></li>
+		<li class="sub"><a href="struktura.html">Struktūra</a></li>
+		<li class="sub"><a href="aktualitates.html">Aktualitātes</a></li>
+		<li class="sub"><a href="brivais-mikrofons.html">Brīvais mikrofons</a></li>
+		<li class="sub"><a href="dokumenti.html">Dokumenti</a></li>
+		<li class="sub"><a href="galerija.html">Galerija</a></li>
+		</ul>
+	</header>
+
+	<main>
+        
+<!-- content -->
+
+<section class="misc">
+
+<h2>Galerija</h2>
+
+<div class="about">
+    <div class="banner_2"></div>
+    <div class="content" id="contentMain">
+      <div class="container_news" id="container_news">
+	  
+	  
+<!--ŠEIT LIEC VISUS JAUNOS IERAKSTUS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+	  <div class="karte">
+          <a class="card" href="https://foto.avg.lv/2024_25/spsemestranoslegumasede_brunosilerovs_viliscivkass/index.html">
+            <div class="card">
+              <div class="card__header">
+                <img src="./galerija/1-sem-sede.jpeg" alt="card__image" class="card__image" width="600">
+              </div>
+              <div class="card__body">
+			  <span class="tag tag-white">18.12.2024</span>
+                <h4>1. semestra noslēguma sēde</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+	  
+	  <div class="karte">
+          <a class="card" href="https://drive.google.com/drive/folders/1_ZJzx1fkeQs8qw5Q6P9AocaMCWSlvT3l?usp=sharing">
+            <div class="card">
+              <div class="card__header">
+                <img src="./galerija/arhivs-1/arhivs-1-cover.png" alt="card__image" class="card__image" width="600">
+              </div>
+              <div class="card__body">
+			  <span class="tag tag-white">2014. - 2023. g.</span>
+                <h4>Sociālo tīklu arhīvs</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+	  
+		
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobSwitch = document.getElementById('mobSwitch');
+    const menu = document.querySelector('header ul');
+    const subMenuParents = document.querySelectorAll('header ul li.sub > a'); // Parent items with submenus
+
+    // Toggle the main mobile menu
+    mobSwitch.addEventListener('click', function() {
+        menu.classList.toggle('open');
+    });
+
+    // Handle submenu toggle for items with submenus
+    subMenuParents.forEach(function(subMenuLink) {
+        subMenuLink.addEventListener('click', function(event) {
+            const parentLi = this.parentElement;
+
+            // Check if the parent li has a submenu
+            if (parentLi.querySelector('ul')) {
+                event.preventDefault(); // Prevent navigation for the parent link
+                
+                // Close other open submenus
+                subMenuParents.forEach(function(otherLink) {
+                    const otherParentLi = otherLink.parentElement;
+                    if (otherParentLi !== parentLi) {
+                        otherParentLi.classList.remove('open');
+                    }
+                });
+
+                // Toggle the clicked submenu
+                parentLi.classList.toggle('open');
+            }
+        });
+    });
+});
+</script>
+
+<!-- /content -->
+	</main>
+
+	<footer>
+		<a href="http://wedidthis.lv/" target="_blank" class="wdt" title="IT risinājumu izstrāde"></a>
+		<p>© Rīgas Āgenskalna Valsts ģimnāzija, 2024</p>
+	</footer>
+</div>
+
+</body></html>
