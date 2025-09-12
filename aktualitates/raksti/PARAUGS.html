@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--VEIDOTS NO AVG.LV KOPIJAS, VISAS AUTORTIESIBAS PIENAKAS RAVG-->
+<!-- saved from url=(0023)https://avg.lv/lv/home/ -->
+<!--Pārveidoja Vilis Civkašs, IT koordinators 24/25. m.g.-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	<title>RĀVģ SP | Aktualitātes</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" href="../../general/open-sans.css">
+	<link rel="stylesheet" href="../../general/roboto-condensed.css">
+	<link rel="stylesheet" href="../../general/style.css">
+
+	<script src="../../general/jquery.min.js.download"></script>
+	<script src="../../general/script.js.download"></script>
+</head><body>
+
+<div id="frame">
+	<header>
+
+	</header>
+
+	<main>
+        
+<!-- content -->
+<section class="misc">
+
+
+<h2>VIRSRAKSTS</h2>
+
+
+<img src="../../aktualitates/ATTĒLS" width="100%">
+
+
+<div class="_text">
+
+
+
+
+
+</div>
+
+</section>
+
+<section class="misc">
+<br>
+<div class="_text">
+<table id="kontakti">
+<tr>
+<td onclick="window.location.href='https://www.instagram.com/agenskalna.valsts/';">
+	<br>
+	<img src="../../kontakti/ig-logo.png" width="10%">
+	<p>@agenskalna.valsts</p>
+</td>
+<td onclick="window.location.href='mailto:avgdome@gmail.com';">
+	<br>
+	<img src="../../kontakti/gm-logo.png" width="12%">
+	<p>avgdome@gmail.com</p>
+</td>
+<td onclick="window.location.href='https://www.tiktok.com/@avgdome/';">
+	<br>
+	<img src="../../kontakti/tt-logo.png" width="12%">
+	<p>@avgdome</p>
+</td>
+<td onclick="window.location.href='https://www.x.com/agenskalniesi/';">
+	<br>
+	<img src="../../kontakti/x-logo.png" width="10%">
+	<p>@agenskalniesi</p>
+</td>
+</tr>
+</table>
+</div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobSwitch = document.getElementById('mobSwitch');
+    const menu = document.querySelector('header ul');
+    const subMenuParents = document.querySelectorAll('header ul li.sub > a'); // Parent items with submenus
+
+    // Toggle the main mobile menu
+    mobSwitch.addEventListener('click', function() {
+        menu.classList.toggle('open');
+    });
+
+    // Handle submenu toggle for items with submenus
+    subMenuParents.forEach(function(subMenuLink) {
+        subMenuLink.addEventListener('click', function(event) {
+            const parentLi = this.parentElement;
+
+            // Check if the parent li has a submenu
+            if (parentLi.querySelector('ul')) {
+                event.preventDefault(); // Prevent navigation for the parent link
+                
+                // Close other open submenus
+                subMenuParents.forEach(function(otherLink) {
+                    const otherParentLi = otherLink.parentElement;
+                    if (otherParentLi !== parentLi) {
+                        otherParentLi.classList.remove('open');
+                    }
+                });
+
+                // Toggle the clicked submenu
+                parentLi.classList.toggle('open');
+            }
+        });
+    });
+});
+</script>
+
+</content>
+	</main>
+
+	<footer>
+		<a href="http://wedidthis.lv/" target="_blank" class="wdt" title="IT risinājumu izstrāde"></a>
+		<p>© Rīgas Āgenskalna Valsts ģimnāzija, 2024</p>
+	</footer>
+
+</body></html>
